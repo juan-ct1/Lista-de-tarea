@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista De Tareas</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <Header>
+        <h1>Lista De Tarea</h1>
+    </Header>
+
+    <form id="lista-nueva">
+        <input
+         type="text"
+         maxlength="50"
+         id="lista" />
+        <input
+         type="submit"
+         id="enviar-submit"
+         value="Anadir" />
+         <input pattern=".{1}" maxlength="6"/>
+    </form>
+    <main>
+    <section class="lista-de-tarea">
+        <Br>
+        </Br>
+        <h2>Tareas Pendientes</h2>
+        <div id="tareas">
+           <!-- <div class="tarea">
+                <div class="contenedor">
+                    <input 
+                    type="text"
+                    class="text"
+                    value="tarea a realizar"
+                    readonly />
+                </div>
+                <div class="acciones">
+                    <button class="editar">Editar</button>
+                    <button class="eliminar">Eliminar</button>
+                </div>
+            </div>-->
+        </div>
+    </section>
+    </main>
+</body>
+<script src="logica.js"></script>
+</html>

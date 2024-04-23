@@ -1,0 +1,146 @@
+:root {
+	--dark: #374151;
+	--darker: #1F2937;
+	--darkest: #111827;
+	--grey: #6B7280;
+	--pink: #EC4899;
+	--purple: #8B5CF6;
+	--light: #EEE;
+}
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Fira sans", sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-color:var(--light);
+    min-height: 100vh;
+    align-items: center;
+    text-align: center;
+
+}
+header{
+    padding: 3rem 1rem;
+    text-align: center;
+    color: aliceblue;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: var(--grey);
+    margin: 1rem;
+}
+
+#lista-nueva{
+    display: flex;
+    
+}
+
+input, button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background:none;
+}
+#lista{
+    flex: 1  1 0%;
+    background-color:var(--darker);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color: var(--light);
+    font-size: 1rem;
+}
+#enviar-submit{
+    color: var(--pink);
+	font-size: 1.25rem;
+	font-weight: 700;
+	background-image: linear-gradient(to right, var(--purple), var(--pink));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	cursor: pointer;
+	transition: 0.4s;
+}
+#enviar-submit:hover {
+	opacity: 0.8;
+}
+
+#enviar-submit:active {
+	opacity: 0.6;
+}
+
+main{
+    flex: 1 1 0%;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+} 
+.lista-de-tarea{
+    padding: 1rem;
+}
+.lista-de-tarea h2{
+    font-size: 1.5rem;
+	font-weight: 300;
+	color: var(--grey);
+	margin-bottom: 1rem;
+}
+#tareas .tarea {
+    display: flex;
+	justify-content: space-between;
+	background-color: var(--darker);
+	color: #EEE;
+	text-align: left;
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-bottom: 1rem;
+}
+#tareas .tarea .contenedor {
+	flex: 1 1 0%;
+}
+#tareas .tarea .contenedor .text {
+    color: var(--light);
+	font-size: 1.125rem;
+	width: 100%;
+	display: block;
+	transition: 0.4s;
+
+}
+#tareas .tarea .contenedor .text:not(:read-only) {
+    color: var(--pink);
+}
+.tarea .acciones {
+	display: flex;
+	margin: 0 -0.5rem;
+}
+
+.tarea .acciones button {
+	cursor: pointer;
+	margin: 0 0.5rem;
+	font-size: 1.125rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: 0.4s;
+}
+
+.tarea .acciones button:hover {
+	opacity: 0.8;
+}
+
+.tarea .acciones button:active {
+	opacity: 0.6;
+}
+
+.tarea .acciones .editar {
+	background-image: linear-gradient(to right, var(--pink), var(--purple));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.tarea .acciones .eliminar {
+	color: crimson;
+}
+
